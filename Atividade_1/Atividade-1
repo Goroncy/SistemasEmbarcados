@@ -1,0 +1,31 @@
+Marie.js.org prints
+
+Como funciona a alocação de memória dinâmica para armazenar seu nome.
+R -> ele aloca a memória ocupando o primeiro lugar vago para que seja inserido o valor do campo solicitado, onde caso ele encontre o armazenamento necessário fará a inserção dos mesmos no endereço de memória.
+
+ORG 000 ;Inicia o programa no endereço 000
+
+Load J
+Store NAME_J
+
+Load o
+Store NAME_O
+
+Load a
+Store NAME_A
+
+Load o2
+Store NAME_O2
+
+Halt ;Termina execução
+
+J,HEX 74
+o,HEX 79
+a,HEX 61
+o2,HEX 79
+
+;Reservando espaço para o nome 'Joao'
+NAME_J,HEX 0
+NAME_O,HEX 0
+NAME_A,HEX 0
+NAME_O2,HEX 0
